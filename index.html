@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surabhi Kumari</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//use.fontawesome.com/releases/v5.7.2/css/all.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=Moon+Dance&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="loader" class="overlay">
+      <div class="overlay__inner">
+        <div class="overlay__content"><span class="spinner"></span></div>
+      </div>
+    </div>
+    <nav class="navbar md:flex justify-between items-center p-4">
+      <a id="brand" class="navbar-brand py-2 px-3 text-white text-2xl" href="#"
+        ><i class="fab fa-staylinked"></i
+      ></a>
+      <button class="menu_btn inline-block md:hidden">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div
+        class="collapse_div md:flex w-full hidden md:block font-bold text-xl"
+      >
+        <ul class="navbar-nav md:flex ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#introduction-section">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience-section">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills-section">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              target="_blank"
+              href="https://drive.google.com/uc?export=download&id=1Nbbu3XPKNfPYxQjF0zdSu4TsOI0oYGdO"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="#home" class="landing-intro">
+      <div class="flex justify-center gap-6">
+        <div class="mt-40 mr-32 text-center">
+          <p id="fullname" class="text-5xl mb-4"></p>
+          <p id="designation" class="text-3xl"></p>
+        </div>
+        <object
+          data="/assets/proud_coder.svg"
+          width="400"
+          height="400"
+        ></object>
+      </div>
+      <object id="wave" data="/assets/wave.svg"></object>
+    </section>
+    <section id="introduction-section" class="mt-28 text-center">
+      <h3 class="heading text-white text-3xl mb-8">Introduction</h3>
+      <div class="flex items-center gap-8 p-6">
+        <div class="desc border-2 border-slate-300 rounded-lg p-4 ml-48">
+          <img id="profile" src="" />
+        </div>
+        <div id="intro-text" class="desc p-4 text-white mr-48">
+        </div>
+      </div>
+    </section>
+    <object id="wave-d" data="/assets/wave-d.svg"></object>
+    <section
+      id="experience-section"
+      class="flex flex-col justify-center items-center gap-14"
+    >
+      <h3 class="heading text-3xl">Experience</h3>
+      <div id="experience-timeline" class="timeline rounded-3xl"></div>
+      <object id="wave" data="/assets/wave.svg"></object>
+    </section>
+    <section id="skills-section" class="h-80 text-center">
+      <h3 class="heading text-white text-3xl">Skills</h3>
+      <div id="skills" class="flex mt-20 gap-32 justify-center">
+        <div class="skill-icon">
+          <img height="64" width="64" src="/assets/icons/java.svg" />
+          <p class="text-white mt-4">JAVA</p>
+        </div>
+        <div class="skill-icon">
+          <img height="64" width="64" src="/assets/icons/springboot.svg" />
+          <p class="text-white mt-4">SPRING BOOT</p>
+        </div>
+        <div class="skill-icon">
+          <img height="64" width="64" src="/assets/icons/hibernate.svg" />
+          <p class="text-white mt-4">HIBERNATE</p>
+        </div>
+        <div class="skill-icon">
+          <img height="64" width="64" src="/assets/icons/angular.svg" />
+          <p class="text-white mt-4">ANGULAR</p>
+        </div>
+        <div class="skill-icon">
+          <img height="64" width="64" src="/assets/icons/junit5.svg" />
+          <p class="text-white mt-4">JUNIT</p>
+        </div>
+      </div>
+    </section>
+    <object id="wave-d" data="/assets/wave-d.svg"></object>
+    <script src="index.js" />
+  </body>
+</html>
